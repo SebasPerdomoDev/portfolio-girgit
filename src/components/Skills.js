@@ -38,28 +38,28 @@ export const Skills = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
+                    <div className="skill-bx wow zoomIn ">
                         <h2>Skills</h2>
                         
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                           <div className="item">
-                              <img style={{ width: "100px", height: "auto", objectFit: "contain" }} src={react} alt="Image" />
+                              <img style={{ width: "130px", height: "auto", objectFit: "contain" }} src={react} alt="Image" />
                               <h5>React JS</h5>
                           </div>
                           <div className="item">
-                              <img style={{ width: "100px", height: "auto", objectFit: "contain" }} src={nodejs} alt="Image" />
+                              <img style={{ width: "115px", height: "auto", objectFit: "contain" }} src={nodejs} alt="Image" />
                               <h5>Node JS</h5>
                           </div>
                           <div className="item">
-                              <img style={{ width: "100px", height: "auto", objectFit: "contain" }} src={mysql} alt="Image" />
+                              <img style={{ width: "135px", height: "auto", objectFit: "contain" }} src={mysql} alt="Image" />
                               <h5>Mysql</h5>
                           </div>
                           <div className="item">
-                              <img style={{ width: "100px", height: "auto", objectFit: "contain" }} src={postgres} alt="Image" />
+                              <img style={{ width: "125px", height: "auto", objectFit: "contain" }} src={postgres} alt="Image" />
                               <h5>PostgreSQL</h5>
                           </div>
                           <div className="item">
-                              <img style={{ width: "100px", height: "auto", objectFit: "contain" }} src={wordpress} alt="Image" />
+                              <img style={{ width: "135px", height: "auto", objectFit: "contain" }} src={wordpress} alt="Image" />
                               <h5>Wordpress</h5>
                           </div>
                       </Carousel>
