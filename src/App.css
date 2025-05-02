@@ -418,10 +418,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: auto; /* Ajusta el ancho según tu diseño */
+  height: auto; /* Ajusta la altura según el tamaño deseado */
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #00b339 -5.91%, #008c7d 111.58%);
+  background: linear-gradient(90.21deg, #006620 -5.91%, #008c7d 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
