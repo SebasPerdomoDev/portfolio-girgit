@@ -57,7 +57,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Bienvenido a GirGit</span>
                 <h1>{`Hi, somos GirGit`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Desarrollo Web", "Plataformas", "Software y mas" ]'><span className="wrap">{text}</span></span></h1>
-                <a href="https://wa.me/573134800728" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/573134800728" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                   <button onClick={() => console.log('connect')}>Contactanos <ArrowRightCircle size={25} /></button>
                 </a>
               </div>}
