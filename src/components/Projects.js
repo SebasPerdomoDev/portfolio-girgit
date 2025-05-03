@@ -1,11 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/travesuras amor.png";
+import projImg2 from "../assets/img/onlystar.png";
+import projImg3 from "../assets/img/portfolio_sebas.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
 
@@ -14,16 +15,19 @@ export const Projects = () => {
       title: "Plataforma Educativa",
       description: "Diseño y Desarrollo",
       imgUrl: projImg1,
-    },
-    {
-      title: "Pagina Web",
-      description: "Diseño y Desarrollo",
-      imgUrl: projImg2,
+      Link: "https://travesurasconamor.com/login",
     },
     {
       title: "E-commerce",
+      description: "Diseño y Desarrollo",
+      imgUrl: projImg2,
+      Link: "https://onlystardenim.com/",
+    },
+    {
+      title: "Pagina Web",
       description: "Diseñor y Desarrollo",
       imgUrl: projImg3,
+      Link: "https://portafolio-sebas-seven.vercel.app/",
     },
     
   ];
@@ -46,18 +50,16 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
     <Tab.Pane eventKey="first">
-      <Row>
-        {
-          projects.map((project, index) => {
-            return (
-              <ProjectCard
-                key={index}
-                {...project}
-              />
-            )
-          })
-        }
-      </Row>
+    <Row>
+      {projects.map((project, index) => {
+        return (
+          <Col key={index} sm={6} md={4}>
+            <ProjectCard {...project} />
+          </Col>
+        );
+      })}
+    </Row>
+
     </Tab.Pane>
   </Tab.Content>
 </Tab.Container>
